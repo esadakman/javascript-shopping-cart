@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/beffa0ce68.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- <header>
+        <h1>Checkout</h1>
+    </header>
+    <div class="container">
+        <div class="left">
+            <div class="contact form">
+                <form class="myForm top">
+                    <div class="head">
+                        <h3>Contact information</h3>
+
+                    </div>
+                    <div class="input-box email">
+                        <label for="email">Email</label>
+                        <br>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                    </div>
+                    <div class="input-box phone">
+                        <label for="phone_number">Phone </label>
+                        <br>
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" name="phone_number" placeholder="Enter your phone" id="phone_number" required>
+                    </div>
+                </form>
+            </div>
+            <div class="shipping form">
+                <form class="myForm bottom">
+                    <div class="heads">
+                        <h3>Shipping Adress</h3>
+                    </div>
+                    <div class="input-box name">
+                        <label for="name">Full name</label>
+                        <br>
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input-box adress">
+                        <label for="address">Address</label>
+                        <br>
+                        <i class="fa-solid fa-house"></i>
+                        <input type="text" id="address" name="address" placeholder="Enter your address..." required>
+                    </div>
+
+                    <div class="input-box city">
+                        <label for="city">City</label>
+                        <br>
+                        <i class="fa-solid fa-city"></i>
+                        <input type="text" id="city" name="city" placeholder="Enter your city..." required>
+                    </div>
+
+
+                    <div class="input-box zip">
+                        <div class="input-box country">
+                            <div class="zazaa">
+                                <label for="country" class="tag">Country</label>
+                                <br>
+                                <i class="fa-solid fa-earth-europe"></i>
+                                <select id="dropdown" name="country" required>
+                                    <option value="turkey">Turkey</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="usa">USA</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="uk">UK</option>
+                                </select>
+                            </div>
+                            <div class="zaza">
+                                <label for="postcode">Post Code</label>
+                                <br>
+                                <i class="fa-solid fa-envelopes-bulk"></i>
+                                <input type="text" id="postcode" name="postcode" placeholder="Enter your postal code..."
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="left_bottom">
+                        <div class="see_this">
+
+                            <input type="checkbox" name="check" id="input-checkbox" value="see-info-next">
+                            <label for="input-checkbox"> See this information next time</label>
+                        </div>
+                        <div class="input-box button">
+                            <button type="submit" id="submit" class="submit-button">Continue</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div> -->
+    <!-- !====================== -->
+    <div class="right">
+        <div class="shopping-card">
+            <div class="back-bag">
+                <div class="back-img">
+                    <img src="./IMG/photo1.png" alt="back-bag">
+                </div>
+                <div class="back-bag__name">
+                    <h3>Vintage Backbag</h3>
+                    <p class="price"> <strong id="bag_price">$25.99</strong> <sub>$34.99</sub> </p>
+                </div>
+                <div class="quantity bag">
+                    <div class="quantity_counter">
+                        <button id="min-bag"><i class=" fa-solid fa-minus"></i></button>
+                        <p id="bag_quantity">0</p>
+                        <button id="max-bag"><i class=" fa-solid fa-plus"></i></button>
+
+
+                    </div>
+                    <div class="remove-btn">
+                        <button type="button" class="btn btn-danger">Remove</button>
+                    </div>
+                    <div class="product_total">
+                        <p>Product Total: <span id="spans">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- !================ -->
+            <div class="back-bag">
+                <div class="back-img">
+                    <img src="./IMG/photo2.png" alt="back-bag">
+                </div>
+                <div class="back-bag__name">
+                    <h3>Levi Shoes</h3>
+                    <p class="price"> <strong id="shoes_price">$45.99</strong> <sub>$54.99</sub> </p>
+                </div>
+                <div class="quantity bag">
+                    <div class="quantity_counter">
+
+                        <button id="min-shoes"><i class="  fa-solid fa-minus"></i></button>
+                        <p id="shoes_quantity">0</p>
+                        <button id="max-shoes"><i class=" fa-solid fa-plus"></i></button>
+
+                    </div>
+                    <div class="remove-btn">
+                        <button type="button" class="btn btn-danger">Remove</button>
+                    </div>
+                    <div class="product_total">
+                        <p>Product Total: <span id="spans">0</span></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- !================ -->
+            <div class="back-bag">
+                <div class="back-img">
+                    <img src="./IMG/photo3.jpg" alt="back-bag">
+                </div>
+                <div class="back-bag__name">
+                    <h3>Antique Clock</h3>
+                    <p class="price"> <strong id="clock_price">$74.99</strong> <sub>$94.99</sub> </p>
+                </div>
+                <div class="quantity bag">
+                    <div class="quantity_counter">
+
+                        <button id="min-clock"><i class=" fa-solid fa-minus"></i></button>
+                        <p id="clock_quantity">0</p>
+                        <button id="max-clock"><i class=" fa-solid fa-plus"></i></button>
+
+                    </div>
+                    <div class="remove-btn">
+                        <button type="button" class="  btn btn-danger">Remove</button>
+                    </div>
+                    <div class="product_total">
+                        <p>Product Total: <span id="spans">0</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="total">
+
+                <div class="total_sub ">
+                    <p>Subtotal</p>
+                    <p id="total_sub">$0</p>
+                </div>
+                <div class="total_tax">
+                    <p>Tax(%18)</p>
+                    <p id="total_tax">$0</p>
+                </div>
+
+                <div class="total_var">
+                    <p>Shipping</p>
+                    <p id="total_var">$19</p>
+                </div>
+                <div class="total_cost">
+                    <p>Total</p>
+                    <p id="total_cost">$0</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
