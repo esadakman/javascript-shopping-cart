@@ -101,8 +101,7 @@ function totalPrice() {
   console.log(cQuantity);
   //   console.log(bPrice);
   if (bQuantity <= 0) {
-    // bQuantity = 0;
-    btn_min_shoes.removeAttribute("onclick");
+    bQuantity = 0;
   }
   if (sQuantity <= 0) {
     sQuantity = 0;
