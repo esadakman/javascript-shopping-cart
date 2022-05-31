@@ -264,11 +264,18 @@ img {
     margin-top: 0;
     padding: .2rem .5rem;
     gap: 0.7rem;
-
 }
 
 .back-bag i {
     cursor: pointer;
+}
+
+#shoes_quantity,
+#clock_quantity,
+#bag_quantity {
+
+    width: 1rem;
+    text-align: center;
 }
 
 .remove-btn {
