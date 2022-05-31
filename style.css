@@ -207,6 +207,11 @@ label {
 
 /* !================== right */
 
+.right {
+    display: flex;
+    justify-content: center;
+}
+
 .shopping-card {
     padding: 1rem;
     background-color: #EEEEEE;
@@ -214,6 +219,7 @@ label {
     border-radius: 10px;
     margin-left: 1rem;
     font-family: Montserrat;
+    width: 25rem
 }
 
 .back-bag {

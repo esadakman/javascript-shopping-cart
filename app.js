@@ -23,24 +23,24 @@ var subtotal = document.getElementById("total_sub");
 var tax = document.getElementById("total_tax");
 var shipping = document.getElementById("total_var");
 var total = document.getElementById("total_cost");
-var ship = parseFloat(shipping.innerText.replace("$", ""));
+// var ship = parseFloat(shipping.innerText.replace("$", ""));
 // parseFloat(total.innerText.replace("$", ""));
 
 // console.log(ship);
 // console.log(total.innerText);
 
+// ! ===============Bag==================
+
 btn_max_bag.addEventListener("click", function (event) {
   bag_quantity.textContent++;
+
   totalPrice();
 });
 
 btn_min_bag.addEventListener("click", function (event) {
-  bag_quantity.textContent--;
-  //   function quantityChanged(event) {
-  //     if (bQuantity == 0) {
-  //       bQuantity = 0;
-  //     }
-  //   }
+  if (bag_quantity.innerHTML > 0) {
+    bag_quantity.textContent--;
+  }
   totalPrice();
 });
 
@@ -59,7 +59,9 @@ btn_max_shoes.addEventListener("click", function (event) {
 });
 
 btn_min_shoes.addEventListener("click", function (event) {
-  shoes_quantity.textContent--;
+  if (shoes_quantity.innerHTML > 0) {
+    shoes_quantity.textContent--;
+  }
   totalPrice();
 });
 remove_shoes.addEventListener("click", function (event) {
@@ -77,7 +79,10 @@ btn_max_clock.addEventListener("click", function (event) {
 });
 
 btn_min_clock.addEventListener("click", function (event) {
-  clock_quantity.textContent--;
+  if (clock_quantity.innerHTML > 0) {
+    clock_quantity.textContent--;
+  }
+
   totalPrice();
 });
 
@@ -96,27 +101,8 @@ function totalPrice() {
   var cPrice = parseFloat(clock_price.innerText.replace("$", ""));
   var cQuantity = clock_quantity.innerText;
   var totals = 0;
-  var ship = parseFloat(shipping.innerText.replace("$", ""));
-  //   console.log(sPrice);
-  console.log(cQuantity);
-  //   console.log(bPrice);
-  if (bQuantity <= 0) {
-    bQuantity = 0;
-  }
-  if (sQuantity <= 0) {
-    sQuantity = 0;
-  }
-  if (cQuantity < 0) {
-    cQuantity = 0;
-    cQuantity.innerText = 0;
-  }
-  if (sQuantity == 0 && cQuantity == 0 && bQuantity == 0) {
-    ship.innerText = "0";
-  }
-  console.log(ship.innerText);
 
   Math.round(bPrice * bQuantity * 100) / 100;
-
   bag_total.innerText = Math.round(bPrice * bQuantity * 100) / 100;
   shoes_total.innerText = Math.round(sPrice * sQuantity * 100) / 100;
   clock_total.innerText = Math.round(cPrice * cQuantity * 100) / 100;
@@ -125,5 +111,18 @@ function totalPrice() {
   tax.innerText = "$" + Math.round(totals * 0.18 * 100) / 100;
   subtotal.innerText = "$" + Math.round(totals * 100) / 100;
 
-  total.innerText = "$" + Math.round((totals + ship) * 100) / 100;
+  // if (sQuantity > 0 || cQuantity > 0 || bQuantity > 0) {
+  //   total.innerText = "$" + Math.round((totals + ship) * 100) / 100;
+  // } else {
+  //   total.innerText = "$" + 0;
+  //   ship.innerText = "0";
+  // }
+  if (sQuantity > 0 || cQuantity > 0 || bQuantity > 0) {
+    shipping.innerText = "$" + 19;
+    var ship = parseFloat(shipping.innerText.replace("$", ""));
+    total.innerText = "$" + Math.round((totals + ship) * 100) / 100;
+  } else {
+    total.innerText = "$" + 0;
+    shipping.innerText = "$" + 0;
+  }
 }
