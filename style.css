@@ -210,6 +210,7 @@ label {
 .right {
     display: flex;
     justify-content: center;
+
 }
 
 .shopping-card {
@@ -227,7 +228,7 @@ label {
     grid-template-columns: auto 1fr;
     /* grid-template-rows: 1fr; */
     /* border: 1px solid red; */
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 
 }
 
@@ -250,8 +251,8 @@ label {
 
 img {
     border-radius: 10px;
-    margin: 0 20px 0 0;
-    height: 11rem;
+    margin-right: 20px ;
+    /* height: 11rem; */
     width: 10rem;
 }
 
@@ -302,7 +303,7 @@ img {
     border-top: 1px solid black;
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: .7rem;
 }
 
 
