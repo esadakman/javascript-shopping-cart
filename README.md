@@ -24,7 +24,7 @@ At the end of the this project, students will be able to;
    - When I change any combination of product chart(plus, minus, remove etc.), I want to see the new calculation of chart's prices in concerned fields.
 
 ### Project Link
-You can reach my project from [here](https://esadakman.github.io/shopping_cart/) 👈
+You can reach my project from [here](https://esadakman.github.io/javascript-shopping-cart/) 👈
 ### Preview of the Project
 
 ![shopping-card](https://user-images.githubusercontent.com/98649983/171255707-10f8432b-1047-416f-af15-835720388dca.gif)
